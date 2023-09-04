@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Project Management</title>
+    <title>PROJECT MANAGEMENT TOOL</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Project Management Dashboard</h1>
+        <h1>PROJECT MANAGEMENT TOOL</h1>
     </header>
-    <main>
-        <!-- Content goes here -->
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
-    </footer>
-    <script src="scripts/main.js"></script>
+
+    <div class="container">
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div class="user-list">
+            <h2>User List</h2>
+            <ul id="user-list">
+                <!-- Users will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-task">
+        <h2>Add Task</h2>
+        <input type="text" id="task-name" placeholder="Task name">
+        <select id="assignee">
+            <!-- Users will be dynamically added here -->
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
